@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>    
+<link rel="stylesheet" href="style.css">
+
+</head>
+    <body>
+        <div class="container"></div>
+
+        <center>
+            <h3 class="btn btn-success haeding">Image Recognition Web App</h3>
+            <br> <br>
+
+            <p style="font-size: 20px;">Model is trained to identifie the following object</p>
+
+<b class="name_of_object">
+    Father
+    <hr>
+    Mother
+    <hr>
+    brother
+    <hr>
+    Me
+<hr>
+</b>
+<label>Webcam View - </label>
+<div id="camera"></div>
+<br><br>
+<label>Photo - </label>
+<div id="result"></div>
+<br><br>
+<button onclick="take_snapshot();" class="btn btn-danger">Capture Image</button>
+<br><br>
+<button onclick="check();" class="btn btn-success">Identify Image</button>
+<br><br>
+
+<p style="font-size: 25px;">object : <span id="person"></span></p>
+<p style="font-size: 25px;">Accurecy : <span id="Accuracy"></span></p>
+<script src="main.js"></script>
+
+
+    </body>
+</html>
